@@ -13,10 +13,10 @@ class Task {
 
   // Konversi dari Map (SQLite) ke Object
   factory Task.fromMap(Map<String, dynamic> json) => Task(
-    id: json['id'],
-    title: json['title'],
-    description: json['description'],
-    isDone: json['isDone'] == 1,
+    id: json['id'] as int?,
+    title: json['title'] ?? '',
+    description: json['description'] ?? '',
+    isDone: (json['isDone'] ?? 0) == 1,
   );
 
   // Konversi dari Object ke Map (untuk disimpan di SQLite)

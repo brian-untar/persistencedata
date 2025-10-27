@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'database.dart';
+import '../db/database.dart';
 import 'add_edit_list.dart';
-import 'task.dart';
+import '../model/task.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

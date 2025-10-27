@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'database.dart';
-import 'task.dart';
+import '../db/database.dart';
+import '../model/task.dart';
 
 class AddTaskScreen extends StatefulWidget {
   final Task? task;

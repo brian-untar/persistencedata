@@ -1,12 +1,16 @@
+import 'package:sembast/sembast.dart'; //2
+import 'package:sembast/sembast_io.dart'; //3
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart'; //4
 import 'package:sqflite/sqflite.dart';
-import 'package:path/path.dart';
-import 'task.dart';
+import 'dart:io'; //1
+import '/model/task.dart'; //5
 
 class DBHelper {
   DBHelper._privateConstructor();
   static final DBHelper instance = DBHelper._privateConstructor();
 
-  static Database? _database;
+  static db? _database;
 
   Future<Database> get database async {
     if (_database != null) return _database!;
