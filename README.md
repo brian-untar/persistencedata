@@ -1,6 +1,6 @@
 # persistencedata
 
-A new Flutter project.
+Proyek ini merupakan aplikasi To-Do List sederhana yang dikembangkan menggunakan Flutter dengan penyimpanan data lokal menggunakan SQLite melalui package sqflite. Aplikasi ini berfungsi untuk mencatat, menampilkan, mengedit, dan menghapus daftar tugas pengguna secara offline tanpa koneksi internet.
 
 ## Getting Started
 
